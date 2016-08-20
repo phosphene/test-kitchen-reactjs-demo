@@ -8,9 +8,15 @@ A Chef cookbook for configuration of a generic react app informed by Inspec test
 
 Test Kitchen is a RubyGem
 
-We have useed Bundler, and have added `gem "test-kitchen"` to our Gemfile
+We have used Bundler, and have added `gem "test-kitchen"` to our Gemfile among others
 
 make sure to run `bundle install`.
+
+And, of course, you will need bundler installed as well, if it is not yet installed.
+
+```
+$ gem install bundler
+```
 
 
 A `.kitchen.yml` was created in our project base directory. This file
@@ -40,7 +46,7 @@ $ kitchen converge default-ubuntu-1404
 $ kitchen converge
 ```
 
-currently only converege on `default-ubuntu-1404`
+currently only converges on `default-ubuntu-1404`
 
 
 Destroy all instances with:
